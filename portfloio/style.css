@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-family: font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+section{
+    padding: 100px;
+}
+.banner{
+    position: relative;
+    min-height: 110vh;
+    background: url(./image/bank.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+.banner h2{
+    font-size: 2.0em;
+    color: white;
+    font-weight: 500;
+    line-height: 1.5em;
+    
+}
+.banner h2 {
+    font-size: 3em;
+    font-weight: 700;
+}
+.banner h3{
+    font-size: 3em;
+    color: rgba(7, 1, 12, 0.788);
+    font-weight: 700;
+}
+.btn{
+    position: relative;
+    background: #2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 20px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    transition: 0.4s;
+}
+header .sticky{
+    background-color: #fff;
+    padding: 20px 100px;
+}
+header .logo{
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+header ul li a:hover{
+    color: red;
+}
+/*.about{
+    background: #16293b;
+    padding: 100px;
+    width: 50%;
+}
+.heading{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.contentBx{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}*/
+.about{
+    background-color: #16293b;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+    
+}
+.heading h2{
+    font-weight: 600;
+    font-size: 30px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(12, 11, 11, 0.111);
+    
+}
+.contentBx{
+    padding-right: 30px;
+    color: white;
+}
+.contentBx h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.w50{
+    min-width: 50%;
+    margin-left: 50px;
+    
+}
+img{
+    max-width: 100%;
+}
+.w50 .imgbb{
+    border-radius: 20px;
+}
+.services{
+    background: #111;
+}
+.heading .white{
+    color: #fff;
+}
+.services .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.services .content .servicesBx{
+    padding: 40px 20px;
+    background: #fff;
+    color: #222;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.services .content .servicesBx:hover{
+    background: #2196f3;
+}
+.services .content .servicesBx img{
+    border-radius: 10px;
+}
+.work .content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.work .heading h2{
+    color: black;
+}
+.work .content .workBx{
+    width: 50%;
+    padding: 20px;
+} 
+.work .content .workBx img{
+    max-width: 100%;
+}
+
+/*.containerr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.containerr .cardd{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+.containerr .cardd:hover{
+    height: 420px;
+}
+.containerr .cardd .imgbxx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0.5px 20px rgba(0, 0, 0, 0.2);
+}
+.containerr .cardd .imgbxx img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+.containerr .cardd .contentt{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.containerr .cardd:hover .contentt{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40;
+    transition-delay: 0.3s;
+}/
